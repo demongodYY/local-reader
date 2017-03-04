@@ -1,0 +1,17 @@
+{
+  "name": "local-reader",
+  "description": "a reader for local text",
+  "main": "main.js",
+  "keywords": [
+    "reader"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
