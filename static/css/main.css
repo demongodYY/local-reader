@@ -1,0 +1,63 @@
+/* CSS Document */
+			html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; } 
+			img { border:none; } 
+			img{display: block;}
+			ul, ol, li { list-style:none; }
+			body { font-size:16px ;font-family:"微软雅黑","宋体","Arial Narrow";background-color: #FFFFFF;}
+			a { color:#2f2f2f; text-decoration:none; } 
+			.clearfix:before,.clearfix:after{
+				content: "";
+				display: table;	
+			} 
+			.clearfix:after{
+				clear: both;
+			}
+			.clearfix{
+				*zoom: 1;
+			}
+/*------common-------*/
+.container{
+	margin-top: 5%;
+}
+/*layout*/
+.div_catalog{
+	background-color: #9acfea;
+	/*height: 100%;*/
+}
+.div_notes{
+	background-color: #ccc;
+	height: 680px;}
+.div_content{
+	background-color: #eee;
+	height: 680px;
+	overflow:auto;
+}
+
+/*catalog*/
+/**/.div_catalog input{
+ 	position:absolute;
+ 	clip:rect(0 0 0 0);
+}
+.div_catalog li{
+	width: 100%;
+	height: 120px;
+	margin-top: 20px;
+	background-color: #f3f3f3;
+	text-align: center;
+	line-height: 120px;
+}
+
+/*content*/
+.div_content .div_btns{
+	position: absolute;
+	/*display: none;*/
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	background-color: #DDDDDD;
+}
+.div_content .div_btns button{
+	width: 50px;
+	float: left;
+}
+
+/*note*/
