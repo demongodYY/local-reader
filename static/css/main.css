@@ -23,21 +23,10 @@ button,button:active{
 	
 }
 /*layout*/
-.div_catalog{
-	background-color: #9acfea;
-	/*height: 100%;*/
-}
-.div_notes{
-	background-color: #ccc;
-	height: 680px;}
-.div_content{
-	background-color: #eee;
-	height: 680px;
-	overflow:auto;
-}
+
 
 /*catalog*/
-/**/.div_catalog input{
+.div_catalog input{
  	position:absolute;
  	clip:rect(0 0 0 0);
 }
@@ -45,7 +34,6 @@ button,button:active{
 	width: 100%;
 	height: 120px;
 	margin-top: 20px;
-	background-color: #f3f3f3;
 	text-align: center;
 	line-height: 120px;
 }

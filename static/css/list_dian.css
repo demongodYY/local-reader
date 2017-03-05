@@ -1,11 +1,3 @@
-.div_catalog li{
-    width: 100%;
-    /*height: 120px;*/
-    margin-top: 20px;
-    background-color: #f3f3f3;
-    text-align: left;
-    /*line-height: 120px;*/
-}
 .div_catalog{
     height:680px;
     position: relative;
@@ -18,9 +10,9 @@
 .div_catalog li span{
     text-align: left;
 }
-#view{
+/*#view{
     height: 680px;
-}
+}*/
 .div_content h2{
     text-align: center;
     line-height: 40px;
