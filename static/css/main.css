@@ -16,20 +16,22 @@
 				*zoom: 1;
 			}
 /*------common-------*/
-
+.div_container{
+	height: 100%;
+}
 
 /*layout*/
-.div_catalog,.div_notes{
-}
 .div_catalog{
 	background-color: #204D74;
+	height: 100%;
 }
 .div_notes{
 	background-color: #A94442;
+	height: 100%;
 }
 .div_content{
 	background-color: #5E5E5E;
-	
+	height: 100%;
 }
 /*catalog*/
 .div_catalog input{
