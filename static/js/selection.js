@@ -117,10 +117,14 @@ var operatePopUp = {
     popUpTop : 0,
 
     getMouseCoord : function (event) {
-        var coordX = event.clientX + document.body.scrollLeft;
-            coordY = event.clientY + document.body.scrollTop;
-        this.popUpTop = coordY + 20 + "px";
-        this.popUpLeft = coordX > 60 ? coordX-60+"px" : coordX+"px";
+    var thisX = document.getElementById("id_content").offsetLeft;
+    var thisY = document.getElementById("id_content").offsetTop;
+    var thisScrollTop = document.documentElement.scrollTop + document.body.scrollTop;
+	event = event||window.event; 
+    var coordX = event.clientX - thisX;
+        coordY = event.clientY - thisY + thisScrollTop;
+    this.popUpTop = coordY + 20 + "px";
+    this.popUpLeft = coordX > 60 ? coordX-60+"px" : coordX+"px";
     },
     
     showButtonSet : function () {
