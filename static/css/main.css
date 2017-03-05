@@ -20,7 +20,6 @@
 	margin-top: 5%;
 }
 /*layout*/
-<<<<<<< HEAD
 .div_catalog{
 	background-color: #9acfea;
 	/*height: 100%;*/
@@ -33,16 +32,12 @@
 	height: 680px;
 	overflow:auto;
 }
-=======
 
->>>>>>> 55ad8972a2d16c21042b1514dc281dce3517ab32
 /*catalog*/
 /**/.div_catalog input{
  	position:absolute;
  	clip:rect(0 0 0 0);
 }
-<<<<<<< HEAD
-=======
 .div_catalog li{
 	width: 100%;
 	height: 120px;
@@ -66,4 +61,3 @@
 }
 
 /*note*/
->>>>>>> 55ad8972a2d16c21042b1514dc281dce3517ab32
