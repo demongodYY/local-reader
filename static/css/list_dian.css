@@ -25,3 +25,20 @@
 
 
 }
+#view_note .itme_note{
+    width: 100%;
+    height: 30px;
+    margin-top:10px ;
+    overflow: hidden;
+    background: #ffffff;
+
+}
+#view_note .itme_note p{
+    line-height: 30px;
+    text-indent:25px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+}
