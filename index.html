@@ -3,49 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Local-Reader</title>
-    <!--<link href="bower_components/bootstrap/dist/css/bootstrap.min.css " rel="stylesheet" type="text/css"/>-->
-    <!--<link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>-->
+    <!----><link href="bower_components/bootstrap/dist/css/bootstrap.min.css " rel="stylesheet" type="text/css"/>
+    <!----><link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="static/css/main.css"/>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <!----><script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="static/js/main.js"></script>
+    <link href="static/css/list_dian.css" rel="stylesheet">
     
 </head>
 <body>
-        <div class="div_files">
-	<div class="container">
-	<div class="row">
-	    <div class="div_catalog col-md-3">
-	    	<label for="sfile" class="btn btn-primary">打开本地文档</label>
-	        <input type="file" class="file_open" id="sfile" />
-	        <div class="div_files">
-	            <ul class="ul_files list-group">
-	                <li class="div_file1 list-group-item"><span>file1</span><button class="btn btn-danger">删除</button></li>
-	                <li class="div_file2 list-group-item"><span>file2</span><button class="btn btn-danger">删除</button></li>
-	            </ul>
-	        </div>
-	    </div>
-	    <div class="div_content col-md-6">
-	        <div class="div_container">
-	            <h2>President Trump</h2>
-	            <p>As the Trump administration continues to be bedevilled by a drip-drip of revelations about ties to Russian officials during and after last year's election, the president has seemingly settled on the identity of the malevolent figure behind the turmoil.</p>
-	            <p>It was the former president, Mr Trump asserts, who is guilty of meddling in the 2016 campaign, not Russia. Mr Obama, he says, is the one whose deeds merit investigation.
-	                The president's early morning tweets follow an interview on Tuesday in which he accused Mr Obama and "his people" of orchestrating recent political protests across the US and of being behind the government leaks that have embarrassed the White House.</p>
-	            <p>There is scant evidence supporting these allegations, but charges like these fit a pattern. Mr Trump is at his sharpest when pushing back against perceived antagonists, such as Republican primary opponents like Jeb Bush, establishment conservatives who resisted his nomination or Hillary Clinton in the election.</p>
-	            <p>Now Mr Trump is returning to his favourite political foil - a necessity given the current Democratic power vacuum in Washington. It could mark the beginning of a massive water-muddying effort in which any forthcoming investigatory revelations are swept up in a growing partisan maelstrom.</p>
-	        </div>
-	        <div class="div_btns">
-	            <button class="btn_highlight">高亮</button>
-	            <button class="btn_addnote">注释</button>
-	            <button class="btn_trans">翻译</button>
-	            <button class="btn_search">查询</button>
-	        </div>
-	    </div>
-	    <div class="div_notes col-md-3">
-	        <div class="note_id1">123</div>
-	        <div class="note_id2">666</div>
-	    </div>
-	</div>
-	</div>
+    <div class="eg panel panel-default container-fluid">
+    <div class="panel-heading">FCC文本阅读器</div>
+    <div class="panel-body">
+        <div id="view">
+            <div class="container">
+                <div class="row">
+                    <div class="div_catalog col-md-2">
+                        <label for="sfile" class="btn btn-primary">open</label>
+                        <input type="file" class="file_open" id="sfile" />
+                        <div class="div_files">
+                            <ul class="ul_files list-group">
+                                <li class="div_file1 list-group-item"><span>file1</span><button class="btn btn-danger pull-right">删除</button></li>
+                                <li class="div_file2 list-group-item"><span>file1</span><button class="btn btn-danger pull-right">删除</button></li>
+                                <li class="div_file3 list-group-item"><span>file2</span><button class="btn btn-danger pull-right">删除</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div_content col-md-7">
+                        <div class="div_container">
+                            <h2>President Trump</h2>
+                            <p>As the Trump administration continues to be bedevilled by a drip-drip of revelations about ties to Russian officials during and after last year's election, the president has seemingly settled on the identity of the malevolent figure behind the turmoil.</p>
+                            <p>It was the former president, Mr Trump asserts, who is guilty of meddling in the 2016 campaign, not Russia. Mr Obama, he says, is the one whose deeds merit investigation.
+                                The president's early morning tweets follow an interview on Tuesday in which he accused Mr Obama and "his people" of orchestrating recent political protests across the US and of being behind the government leaks that have embarrassed the White House.</p>
+                            <p>There is scant evidence supporting these allegations, but charges like these fit a pattern. Mr Trump is at his sharpest when pushing back against perceived antagonists, such as Republican primary opponents like Jeb Bush, establishment conservatives who resisted his nomination or Hillary Clinton in the election.</p>
+                            <p>Now Mr Trump is returning to his favourite political foil - a necessity given the current Democratic power vacuum in Washington. It could mark the beginning of a massive water-muddying effort in which any forthcoming investigatory revelations are swept up in a growing partisan maelstrom.</p>
+                        </div>
+                        <div class="div_btns">
+                            <button class="btn_highlight">高亮</button>
+                            <button class="btn_addnote">注释</button>
+                            <button class="btn_trans">翻译</button>
+                            <button class="btn_search">查询</button>
+                        </div>
+                    </div>
+                    <div class="div_notes col-md-3">
+                        <div class="note_id1">123</div>
+                        <div class="note_id2">666</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
