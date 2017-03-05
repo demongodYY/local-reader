@@ -10,11 +10,6 @@
     height:680px;
     position: relative;
 }
-.div_catalog li button{
-    position: absolute;
-    right:5px;
-    top:5px;
-}
 .div_catalog li span{
     text-align: left;
 }
@@ -35,18 +30,31 @@
 }
 #view_note .itme_note{
     width: 100%;
-    height: 30px;
     margin-top:10px ;
     overflow: hidden;
-    background: #ffffff;
+    background: #7fee1166;
+    border-radius: 5px;
 
 }
 #view_note .itme_note p{
-    line-height: 30px;
     text-indent:25px;
-    display:block;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
+    width: 100%;
+
+}
+.div_catalog input{
+    position: absolute;
+    left:-60px;
+    top:0;
+}
+.container .row .div_catalog .but_clean{
+    position: absolute;
+    right:5px;
+    top:5px;
+}
+.container .row .div_catalog .but_open{
+    position: absolute;
+    left:-85px;
+    top:0;
+    background: #3c3c3c33;
 
 }

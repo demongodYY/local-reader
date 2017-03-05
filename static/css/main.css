@@ -20,12 +20,14 @@
 }
 /*layout*/
 .div_catalog{
-	background-color: #9acfea;
+	background-color: #9acfea33;
 	/*height: 100%;*/
 }
 .div_notes{
-	background-color: #ccc;
-	height: 680px;}
+	background-color: #cccccc80;
+	height: 680px;
+	overflow: auto;
+}
 .div_content{
 	background-color: #eee;
 	height: 680px;
@@ -41,6 +43,7 @@
 	width: 100%;
 	margin-top: 20px;
 	background-color: #f3f3f3;
+	position: relative;
 }
 
 /*content*/
