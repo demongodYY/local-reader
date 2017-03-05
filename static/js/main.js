@@ -16,6 +16,24 @@ $(document).ready(function() {
         reader.readAsText(f);
         $(".title").html(fileOpen.delExtension(f.name));
     });
+
+    $(".div_content").mouseup(function(e) {
+        if (operateSelection.getSelRange()) {
+            var selection = operateSelection.selObj;
+            if (selection.focusNode === selection.anchorNode) {
+                operatePopUp.getMouseCoord(e);
+                operatePopUp.showObj($(".div_btns"));
+            }
+        }
+    });
+
+    $(document).mousedown(function () {
+        if (operateSelection.getSelRange()) {
+            operateSelection.selObj.removeAllRanges();
+        }
+        operatePopUp.hideObj($(".div_btns"));
+    })
+
 });
 
 
