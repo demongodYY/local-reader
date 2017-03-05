@@ -27,15 +27,18 @@ $(document).ready(function() {
         }
     });
 
-    $(document).mousedown(function () {
-        if (operateSelection.getSelRange()) {
-            operateSelection.selObj.removeAllRanges();
-        }
-        operatePopUp.hideObj($(".div_btns"));
-    })
+    // hide btns
+    // $(document).mousedown(function () {
+    //     if (operateSelection.getSelRange()) {
+    //         operateSelection.selObj.removeAllRanges();
+    //     }
+    //     setTimeout(function(){
+    //         operatePopUp.hideObj($(".div_btns"));
+    //     }, 500);
+    // })
 
     // bind btns click event
-    $("input[class*='btn_']").click(function(event) {
+    $(".div_btns button").click(function(event) {
 
         operatePopUp.hideObj($(".div_btns"));
         switch (event.target.className)
@@ -57,6 +60,21 @@ $(document).ready(function() {
             default:
                 ;
         }
+    });
+
+    $(".btn_submit").click(function() {
+
+        var newNode = document.createElement("div");
+        var txtNode = document.createTextNode($(".area_note").val());
+        newNode.appendChild(txtNode);
+        //$(newNode).css("display", "none");
+        $(newNode).attr("class", "note_" + btnEvent.noteIndex);
+
+        console.log(newNode);
+        $(".div_notes").append(newNode);
+
+        operatePopUp.hideObj($(".div_notearea"));
+        $(".area_note").val("");
     });
 });
 

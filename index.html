@@ -7,10 +7,10 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="static/js/main.js"></script>
 
     <script src="static/js/selection.js"></script>
     <script src="static/js/main.js"></script>
+    <script src="static/js/btnevent.js"></script>
 
     <link href="static/css/btns.css" rel="stylesheet" type="text/css"/>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css " rel="stylesheet" type="text/css"/>
@@ -48,8 +48,13 @@
                                 <p>There is scant evidence supporting these allegations, but charges like these fit a pattern. Mr Trump is at his sharpest when pushing back against perceived antagonists, such as Republican primary opponents like Jeb Bush, establishment conservatives who resisted his nomination or Hillary Clinton in the election.</p>
                                 <p>Now Mr Trump is returning to his favourite political foil - a necessity given the current Democratic power vacuum in Washington. It could mark the beginning of a massive water-muddying effort in which any forthcoming investigatory revelations are swept up in a growing partisan maelstrom.</p>
                             </div>
+                            <div class="div_notearea" hidden="hidden">
+                                <textarea class="area_note"></textarea>
+                                <button class="btn_submit">submit</button>
+                            </div>
+                            <div class="div_transarea" hidden="hidden"></div>
                         </div>
-                        <div class="div_btns">
+                        <div class="div_btns" hidden="hidden">
                             <button class="btn_highlight">高亮</button>
                             <button class="btn_addnote">注释</button>
                             <button class="btn_trans">翻译</button>
@@ -57,8 +62,7 @@
                         </div>
                     </div>
                     <div class="div_notes col-md-3">
-                        <div class="note_id1">123</div>
-                        <div class="note_id2">666</div>
+
                     </div>
                 </div>
             </div>
