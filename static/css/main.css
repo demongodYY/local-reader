@@ -19,6 +19,9 @@
 .container{
 	margin-top: 5%;
 }
+button,button:active{
+	
+}
 /*layout*/
 
 /*catalog*/
@@ -43,9 +46,10 @@
 	border-radius: 5px;
 	background-color: #DDDDDD;
 }
-.div_content .div_btns button{
+.div_content .div_btns button,
+.div_content .div_btns button:active{
 	width: 50px;
 	float: left;
+	outline: none;
 }
-
 /*note*/
