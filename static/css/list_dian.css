@@ -33,3 +33,11 @@
 
 
 }
+#view_note .itme_note{
+    width: 100%;
+    height: 60px;
+    margin-top:10px ;
+    overflow: hidden;
+    background: #ffffff;
+
+}
