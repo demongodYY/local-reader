@@ -49,7 +49,7 @@ button,button:active{
 .div_content .div_btns button,
 .div_content .div_btns button:active{
 	width: 50px;
-	float: left;
+	/*float: left;*/
 	outline: none;
 }
 /*note*/
