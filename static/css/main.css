@@ -36,5 +36,16 @@
 }
 
 /*content*/
+.div_content .div_btns{
+	position: absolute;
+	/*display: none;*/
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	background-color: #DDDDDD;
+}
 .div_content .div_btns button{
+	width: 50px;
 	float: left;
+}
+
+/*note*/
