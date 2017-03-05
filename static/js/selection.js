@@ -4,6 +4,7 @@
 var operateSelection = {
     selObj : "",
     rangeObj : "",
+    noteIndex : 0,
 
     getSelRange : function () {
         if (document.getSelection) {
@@ -20,19 +21,23 @@ var operateSelection = {
             return false;
         }
     },
+}
 
+var btnEvent = {
     addHighlight : function () {
+        alert(1);
         var newNode = document.createElement("span");
         newNode.setAttribute("class", "high_light");
         this.rangeObj.surroundContents(newNode);
     },
 
     addNote : function () {
-        noteIndex = genNoteIndex();
+        alert(2);
+        this.noteIndex = this.genNoteIndex();
         var newNode = document.createElement("u");
-        newNode.setAttribute("class", "underline");
-        newNode.setAttribute("id", noteIndex);
-        rangeObj.surroundContents(newNode);
+        newNode.class = "underline";
+        newNode.id = this.noteIndex;
+        this.rangeObj.surroundContents(newNode);
 
         $("u").click(function(event){
             if (event.target.tagName === "U") {
@@ -42,7 +47,7 @@ var operateSelection = {
             }
         });
         // prompt note editer
-        promptObject($(".div_note"));
+        operatePopUp.showObj($(".div_note"));
     },
 
     showNote : function() {
@@ -50,6 +55,7 @@ var operateSelection = {
     },
 
     translateWord : function () {
+        alert(3);
         var youdaoAPI = "http://fanyi.youdao.com/openapi.do?keyfrom=pdblog&key=993123434&type=data&doctype=jsonp&callback=translate&version=1.1&q=",
             reqURL = youdaoAPI + selObj.toString(),
             i, item,
@@ -93,6 +99,7 @@ var operateSelection = {
     },
 
     searchWord : function () {
+        alert(4);
         var reqURL = "https://www.baidu.com/s?wd=" + selObj.toString();
         window.open(reqURL);
     },

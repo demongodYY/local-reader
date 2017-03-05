@@ -34,6 +34,30 @@ $(document).ready(function() {
         operatePopUp.hideObj($(".div_btns"));
     })
 
+    // bind btns click event
+    $("input[class*='btn_']").click(function(event) {
+
+        operatePopUp.hideObj($(".div_btns"));
+        switch (event.target.className)
+        {
+            case "btn_highlight":
+                btnEvent.addHighlight();
+                //storeContentStatus();
+                break;
+            case "btn_addnote":
+                btnEvent.addNote();
+                //storeContentStatus();
+                break;
+            case "btn_trans":
+                btnEvent.translateWord();
+                break;
+            case "btn_search":
+                btnEvent.searchWord();
+                break;
+            default:
+                ;
+        }
+    });
 });
 
 
