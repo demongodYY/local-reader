@@ -54,3 +54,9 @@ button,button:active{
 	outline: none;
 }
 /*note*/
+
+.div_transarea {
+    padding: 5px;
+    border: 2px solid #ccc;
+    background-color: #F0F0F0;
+}

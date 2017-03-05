@@ -33,13 +33,13 @@ var btnEvent = {
 
     },
 
-
-
     translateWord : function () {
         var youdaoAPI = "http://fanyi.youdao.com/openapi.do?keyfrom=Local-reader&key=1710758277&type=data&doctype=jsonp&callback=show&version=1.1&q=",
             reqURL = youdaoAPI + operateSelection.selObj.toString(),
             i, item,
             retData = "";
+
+        console.log(operateSelection.selObj.toString());
 
         $.ajax({
             type: "data",
@@ -52,10 +52,10 @@ var btnEvent = {
             success: function(data) {
                 // console.log(JSON.stringify(data, jsonDump, 4));
                 if (data.basic) {
-                    retData += "prononce" + "</br>";
-                    retData += "us-phonetic: [" + data.basic["us-phonetic"] + "]" + "</br>";
-                    retData += "uk-phonetic: [" + data.basic["uk-phonetic"] + "]" + "</br>";
-                    retData += "translation" + "</br>";
+                    retData += "发音" + "</br>";
+                    retData += "美音: [" + data.basic["us-phonetic"] + "]" + "</br>";
+                    retData += "英音: [" + data.basic["uk-phonetic"] + "]" + "</br>";
+                    retData += "翻译" + "</br>";
                     $.each(data.basic.explains, function(i, item){
                         retData += (i+1)+". "+item + "</br>";
                     });

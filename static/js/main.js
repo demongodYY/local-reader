@@ -15,9 +15,19 @@ $(document).ready(function() {
         })(f);
         reader.readAsText(f);
         $(".title").html(fileOpen.delExtension(f.name));
+
+        var stringhtml = '<li class="div_file1 list-group-item">'+f.name+'</span><button class="btn btn-danger btn-sm pull-right">删除</button></li>';
+        $(".ul_files").html(stringhtml);
+
+        $(".btn-danger").click(function () {
+            $(".ul_files").html("");
+            $(".div_text").html("");
+            $(".title").html("");
+        })
     });
 
     $(".div_content").mouseup(function(e) {
+        operatePopUp.hideObj($(".div_btns"));
         if (operateSelection.getSelRange()) {
             var selection = operateSelection.selObj;
             if (selection.focusNode === selection.anchorNode) {
@@ -28,20 +38,22 @@ $(document).ready(function() {
     });
 
     // hide btns
-    // $(document).mousedown(function () {
-    //     if (operateSelection.getSelRange()) {
-    //         operateSelection.selObj.removeAllRanges();
-    //     }
-    //     setTimeout(function(){
-    //         operatePopUp.hideObj($(".div_btns"));
-    //     }, 500);
-    // })
+    $(document).mousedown(function () {
+        operatePopUp.hideObj($(".div_transarea"));
+        // if (operateSelection.getSelRange()) {
+        //     operateSelection.selObj.removeAllRanges();
+        // }
+        // setTimeout(function(){
+        //     operatePopUp.hideObj($(".div_btns"));
+        // }, 500);
+    });
 
     // bind btns click event
     $(".div_btns button").click(function(event) {
 
         operatePopUp.hideObj($(".div_btns"));
-        switch (event.target.className)
+        //console.log(event.target.className.split(" ")[0]);
+        switch (event.target.className.split(" ")[0])
         {
             case "btn_highlight":
                 btnEvent.addHighlight();
